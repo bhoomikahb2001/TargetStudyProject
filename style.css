@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef3f4;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.15);
+}
+
+main imag {
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+}
+
+.search {
+    max-width: 767.98px;
+    width: 100%;
+    margin: 0 30px;
+    height: 40px;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    background-color: #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.search input {
+    height: 100%;
+    width: 100%;
+    max-width: 767.98px;
+    padding: 0 50px;
+    outline: none;
+    border: none;
+    background-color: #ced4da;
+    font-size: 1rem;
+}   
+
+.search form i {
+    padding-left: 10px;
+    padding-top: 10px;
+    position: absolute;
+}
+
+#btn button {
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    font-weight: 600;
+    margin-right: 30px;
+    color: #04465d;
+    border-color: #04465d;
+    background-color: transparent;
+}
+
+#btn button:hover{
+    background-color: blue;
+    color: #fff;
+}
+
+.dot{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: darkgrey;
+    margin-top: 3px;
+}
+
+.group-menu{
+    cursor: pointer;
+}
+
+nav{
+    width: 100%;
+    height: 55px;
+    background-color: #19a35c;;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    font-size: 1rem;
+    padding-top: 16px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(150, 217, 195);
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover {
+    color: white;
+}
+
+#btn-g button {
+    background-color: transparent;
+    padding: 0.5rem 0.625rem;
+    font-size: 13px;
+    line-height: 1;
+    background-color: #19a35c;
+    border: none;
+    color: white;
+    border: #19a35c;
+    font-weight: 600;
+    border-radius: 0.125rem;
+    width: 150px;
+    height: 40px;
+}
+
+#btn-g button:hover {
+    background-color: #07914a;
+    color: #fff;
+}
+
+
+.banner img {
+    width: 100%;
+    min-height: 25rem;
+}
+
+.banner-content {
+    position: absolute;
+    top: 280px;
+    left: 80px;
+    color: white;
+    
+}
+
+.banner-content h1 {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.banner-content p {
+    font-weight: 100;
+}
+
+.card {
+    width: 1100px;
+    height: 400px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 450px;
+    left: 90px;
+   
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-top-left-radius: 0.125rem;
+    border-top-right-radius: 0.125rem;
+}
+
+.card-header h4{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: "Roboto Slab", sans-serif;
+    line-height: 1.2;
+    color:#04465d
+}
+
+.card-header button{
+    background-color: transparent;
+    border-color: transparent;
+    color: #19a35c;
+    font-weight: 600;
+    border-radius: 0.125rem;
+    border-width: 2px;
+    cursor: pointer;
+    background-color: rgba(24, 162, 92, 0.1);
+    font-size:  0.75rem;
+    padding: 0.625rem 1.25rem;
+    text-transform: uppercase;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    position: absolute;
+    top: 13px;
+    right: 20px;
+}   
+
+.card-header button:hover {
+    background-color: #19a35c;
+    color: #fff;
+}
+
+.pmd-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    
+}
+
+.list-group-item{
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #016d92;;
+    background-color: transparent;
+    border-right: 1px solid #e4e6e7;
+    border-bottom: 1px solid #e4e6e7;
+    
+}
+.list-group-item .card-icon{
+    width: 50px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    color: #19a35c;
+}
+
+.list-group-item:hover{
+    background-color: #19a35c;
+    color: #fff;
+}
+
+.exam {
+    width: 1100px;
+    height: 100px;
+    position: absolute;
+    left: 90px;
+    top: 950px;
+}
+
+.top {
+    border-bottom: 1px solid #e4e6e7;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 0;
+    color: #016d92;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.bottom {
+    position: absolute;
+    right: 20px;
+}
+.bottom button {
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: none;
+    color: #1d333b;
+    border-radius: 0.125rem;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.bottom button:hover {
+    background-color: #929495;    
+}
+
+.gp button {
+    background-color: #19a35c;
+    color: white;
+    position: absolute;
+    top: 45px;
+    right: 350px;
+}
+
+.gp button:hover {
+   background-color: #07914a;
+    color: #fff;
+}
+
+.c-head {
+    color: #fff;
+    font-size: 1.45rem;
+    font-weight: 100px;
+    position: absolute;
+    top: 30px;
+    left: 90px;
+}
+.b-head button{
+    position: absolute;
+    top: 30px;
+    right: 90px;
+    padding: 0.5rem 0.7rem;
+    color: #fff;
+    background-color: #19a35c;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.b-head button:hover{
+    background-color: #fff;
+    color: #07914a;
+}
+.clg {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 1200px;
+    background-color: #07914a;
+    display: flex;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.box {
+    height: 180px;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    
+}
+.icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2px;
+}
+
+.box p{
+    margin-bottom: 0.5rem;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #016d92;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.career-card{
+    width: 1100px;
+    height: 460px;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+    margin-left: 90px;
+    position: absolute;
+    top: 1700px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-career-card-header{
+   position: absolute;
+   top: 1630px;
+   left: 90px;
+}
+.career-card-header h4{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 0;
+    color: #016d92;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+}
+.btn-career-card-header button {
+    position: absolute;
+    top: 10px;
+    left: 1000px;
+    background-color: transparent;
+    border-color: transparent;
+    color: #19a35c;
+    font-weight: 600;
+    border-radius: 0.125rem;
+    border-width: 2px;
+    cursor: pointer;
+    background-color: rgba(24, 162, 92, 0.1);
+    font-size:  0.75rem;
+    padding: 0.625rem 1.25rem;
+    text-transform: uppercase;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-career-card-header button:hover {
+   background-color: 19a35c;
+    color: #fff;
+}
+
+.option-career-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.career-list-group-item{
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #016d92;;
+    background-color: transparent;
+    border-right: 1px solid #e4e6e7;
+    border-bottom: 1px solid #e4e6e7;
+    
+}
+.career-list-group-item .career-card-icon{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    font-style: #19a35c;
+}
+
+.career-list-group-item:hover{
+    background-color: #19a35c;
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    top: 2200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-col{
+    padding-bottom: 40px;
+}
+
+footer h3{
+    color: #04465d;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+footer li{
+    list-style: none;
+    color: #929495;
+    padding: 10px 5px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+footer li:hover{
+    color:#7a7d7e;
+}
